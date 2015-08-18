@@ -1,0 +1,33 @@
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">-->
+	<head>
+	</head>
+	<body>
+		<h1>Ian Riot API Challenge 1.0</h1>
+		<form>
+		Player ID: <br>
+		<input type = "text" name = "player" id="playerName">	<br><br>
+		<button type = "button" id = "matchButton" >Get Matches</button><br><br>
+		<div class="dropdown">
+			<button id="dLabel" data-toggle="dropdown" class="dropdown-toggle">
+			    Select Match
+			<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dLabel" id = "matchesList">
+			</ul>
+		</div> <br>
+		Match ID: <br>
+		<input type = "text" name = "match" id="matchID" readonly>	<br><br>
+		<button type = "button" id = "setButton" disabled >View Summary</button><br>
+		</form>
+		<div id = "matchSummary"> </div>
+		<div id = "download"> </div>
+	</body>
+	<script type="text/javascript" src = "matchDetails.js"></script>
+	<script type="text/javascript" src = "playerDetails.js"></script>
+</html>
